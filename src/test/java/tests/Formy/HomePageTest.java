@@ -71,12 +71,9 @@ public class HomePageTest {
         Assert.assertTrue(Driver.get().getCurrentUrl().contains("modal"), "The endopoint did not match ");
 
         Driver.get().quit();
+       // Driver.get().quit();
 
     }
-
-
-    /// collections
-
 
 
 
