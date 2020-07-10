@@ -28,8 +28,23 @@ public class ButtonLinks {
 
             clickOnTheDesiredLink1("Buttons");
             Assert.assertEquals(Driver.get().getCurrentUrl().contains("buttons"),true);
-            Driver.get().close();
+         Driver.get().close();
 
 
         }
+
+
+
+    @Test
+    public void verify_button_link_page_dropdown() throws Exception {
+
+        FormyHomePage formyHomePage = new FormyHomePage();
+        Driver.get().get(formyHomePage.url);
+
+        clickOnTheDesiredLink1("Dropdown");
+        Assert.assertEquals(Driver.get().getCurrentUrl().contains("dropdown"), true);
+        Driver.get().close();
+
+
+    }
 }
